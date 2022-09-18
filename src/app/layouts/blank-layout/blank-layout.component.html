@@ -1,3 +1,8 @@
-<p>blank-layout works!</p>
-
-<router-outlet></router-outlet>
+<app-menu color="accent"></app-menu>
+<br class="spacer">
+<div fxLayout="column">
+  <mat-card class="main-card" fxFlexAlign="center">
+    <mat-card-title>Content Card</mat-card-title>
+    <mat-card-content><router-outlet></router-outlet></mat-card-content>
+  </mat-card>
+</div>

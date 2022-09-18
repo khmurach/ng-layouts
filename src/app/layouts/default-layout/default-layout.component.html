@@ -1,2 +1,12 @@
-<p>default-layout works!</p>
-<router-outlet></router-outlet>
+<app-menu></app-menu>
+<br class="spacer">
+<div fxLayout="row" fxLayoutGap="1rem">
+  <mat-card fxFlex="25%">
+    <mat-card-title>Menu Card</mat-card-title>
+    <p>Menu goes here</p>
+  </mat-card>
+  <mat-card fxFlex="75%" class="main-card">
+    <mat-card-title>Content Card</mat-card-title>
+    <router-outlet></router-outlet>
+  </mat-card>
+</div>
